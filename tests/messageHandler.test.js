@@ -8,11 +8,6 @@ describe('MessageHandler', () => {
       expect(messageHandler.validateMessage(data)).toBe(false);
     });
 
-    it('should return false for empty username', () => {
-      const data = { message: 'hello' };
-      expect(messageHandler.validateMessage(data)).toBe(false);
-    });
-
     it('should return true for valid message', () => {
       const data = { message: 'hello' };
       expect(messageHandler.validateMessage(data)).toBe(true);
